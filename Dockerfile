@@ -14,7 +14,9 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y libhwloc15
 USER root
 COPY docker-entrypoint.sh /usr/local/bin/
+COPY baslat.py /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/baslat.py
 
 RUN useradd -ms /bin/bash monero
 USER monero
