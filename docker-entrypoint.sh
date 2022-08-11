@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 baslat.py
+python3 /home/monero/baslat.py
